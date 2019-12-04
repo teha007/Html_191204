@@ -9,7 +9,15 @@
 
 <body>
     
-    <audio src="./old_pop.mp3" autoplay="autoplay" controls="controls"></audio>
-</body>
+    <audio src="./old_pop.mp3" autoplay="autoplay" controls="controls">
+        브라우저에서 audio 요소를 지원하지 않으면 보이는 글씨!!
+    </audio>
+    <!-- 크롬브라우저는 2018년 04월부터 autoplay를 지원하지 않음 -->
+    
+    <!-- 브라우저에 따른 음원의 유형에 대응하기 위해 <source> 요소 사용 -->
 
+        <audio>
+            <source src="./old_pop.mp3"
+        </audio>
+</body>
 </html>
